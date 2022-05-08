@@ -11,7 +11,7 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Consumer<AppData>(
       builder: ((ctx, appdata, child) => Scaffold(
-            appBar: CustomAppBar(),
+            appBar: CustomAppBar(title: 'Home Page', showDrawer: true),
             body: Center(
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
